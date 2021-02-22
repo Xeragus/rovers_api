@@ -12,6 +12,7 @@ GEM
     mime-types-data (3.2021.0212)
     multi_xml (0.6.0)
     optparse (0.1.0)
+    redis (4.2.5)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
@@ -34,6 +35,7 @@ DEPENDENCIES
   dotenv
   httparty
   optparse
+  redis
   rspec
 
 BUNDLED WITH
