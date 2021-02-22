@@ -2,6 +2,7 @@
 
 require 'redis'
 
+# Please read the Caching note in the README
 class Cache
   def initialize(host = :localhost)
     @redis = Redis.new(host: host)
