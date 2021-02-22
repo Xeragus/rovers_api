@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 require './lib/cli/validation/rover'
 require './app/rover'
-require './spec/spec_helper'
 
 RSpec.describe CLI::Validation::Rover do
   describe '#validate' do

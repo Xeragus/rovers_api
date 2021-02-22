@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 require './lib/cli/validation/earth_date'
-require './spec/spec_helper'
 
 RSpec.describe CLI::Validation::EarthDate do
   describe '#validate' do

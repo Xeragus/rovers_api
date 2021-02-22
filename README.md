@@ -28,6 +28,10 @@ For more information on the possible values for this options, please take a look
 
 The app uses `Redis` for caching. It assumes that Redis is running on port `6379`. Please note that caching will work only by `earth dates`, no matter the rover or camera. Meaning, the keys are `earth dates` and there is no information about the rover and the camera. This can be improved with simple `date-rover-camera-to-key` bidirectional translation, but that is out of scope for this showcase.
 
+## Tests
+
+To run the tests, run `rspec` in the root directory.
+
 ## Examples
 
 * `ruby app.rb -r curiosity` will return only images taken by Curiosity

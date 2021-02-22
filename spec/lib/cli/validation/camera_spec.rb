@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require './lib/cli/validation/camera'
-require 'byebug'
 
 RSpec.describe CLI::Validation::Camera do
   describe '#validate' do
