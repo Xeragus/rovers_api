@@ -10,9 +10,9 @@ RSpec.describe CLI::Validation::Camera do
       it 'should raise an exception' do
         camera = 'CAM'
 
-        expect {
+        expect do
           described_class.validate(rover, camera)
-        }.to raise_error(RuntimeError, "The #{rover.name.capitalize} rover has no #{camera} camera")
+        end.to raise_error(RuntimeError, "The #{rover.name.capitalize} rover has no #{camera} camera")
       end
     end
 

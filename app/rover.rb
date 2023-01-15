@@ -3,7 +3,7 @@
 class Rover
   attr_reader :name
 
-  ROVERS = %w(curiosity opportunity spirit).freeze
+  ROVERS = %w[curiosity opportunity spirit].freeze
 
   def initialize(name = 'curiosity')
     @name = name
@@ -22,9 +22,9 @@ class Rover
   def cameras
     case @name
     when 'curiosity'
-      %w(fhaz rhaz mast chemcam mahli mardi navcam)
+      %w[fhaz rhaz mast chemcam mahli mardi navcam]
     when 'opportunity', 'spirit'
-      %w(fhaz rhaz navcam pancam minites)
+      %w[fhaz rhaz navcam pancam minites]
     else
       []
     end

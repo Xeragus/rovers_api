@@ -12,8 +12,8 @@ module CLI
 
       private_class_method def self.valid?(earth_date)
         Date.parse(earth_date)
-      rescue
-        return false
+      rescue StandardError
+        false
       else
         return true if /\d{4}-\d{1,2}-\d{1,2}/.match?(earth_date)
 
